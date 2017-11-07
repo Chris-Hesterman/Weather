@@ -1,0 +1,192 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin: 0 0 25px;
+  background-repeat: no-repeat;
+}
+
+.sunny {
+  background: url("https://source.unsplash.com/p69r7z5cjiY");
+  background-size: cover;
+}
+
+.clearNight {
+  background: url("https://source.unsplash.com/YqDSBD1baE0");
+  background-size: cover;
+}
+
+.cloudy {
+  background: url("https://source.unsplash.com/nUTaiCDS9RE");
+  background-size: cover;
+}
+
+.rainy {
+  background: url("https://source.unsplash.com/pGQbWXBC1dA");
+  background-size: cover;
+}
+
+.stormy {
+  background: url("https://source.unsplash.com/Cm5zI68Wdew");
+  background-size: cover;
+}
+
+.foggy {
+  background: url("https://source.unsplash.com/t4S0F5FXkt4");
+  background-size: cover;
+}
+
+.cloudynight {
+  background: url("https://source.unsplash.com/vgZzM-Gy0e0");
+  background-size: cover;
+}
+
+.snow {
+  background: url("https://source.unsplash.com/okk5s08qkq0");
+  background-size: cover;
+}
+
+h1 {
+  color: yellow;
+  text-align: left;
+  text-shadow: 3px 3px 3px black;
+}
+
+.city {
+  font-size: 4rem;
+  text-align: center;
+  font-family: Cinzel, serif;
+  font-weight: bold;
+}
+
+.weather,
+.temp,
+.temp2,
+.humidity {
+  font-size: 2.75rem;
+}
+
+.convert {
+  display: block;
+  font-size: 2rem;
+  text-shadow: 2px 2px black;
+  color: yellow;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: left;
+  animation-name: colorChange;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes colorChange {
+  0% {
+    color: yellow;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+.convert:hover {
+  color: yellow;
+}
+
+.svg {
+  height: 100px;
+}
+
+.footer {
+  text-align: center;
+}
+
+#credits {
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (min-width: 575px) {
+  .weather,
+  .humidity {
+    margin-bottom: 5%;
+    font-size: 3.5rem;
+  }
+  .temp,
+  .temp2 {
+    margin-bottom: 3%;
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .convert {
+    margin-top: 2.5%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .city {
+    font-size: 5rem;
+  }
+  .weather,
+  .temp,
+  .temp2,
+  .humidity {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .city {
+    font-size: 6rem;
+  }
+  .svg {
+    height: 250px;
+  }
+  .weather,
+  .temp,
+  .temp2,
+  .humidity { 
+    margin-bottom: 10%;
+    margin-left: 15%;
+  }
+  .convert {
+    margin-left: 15%;
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .city {
+    font-size: 8rem;
+  }
+  .weather,
+  .temp,
+  .temp2,
+  .humidity {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  .weather,
+  .temp,
+  .temp2,
+  .humidity {
+    font-size: 6rem;
+  }
+  .convert {
+    font-size: 4rem;
+    margin-top: 1%;
+  }
+  .svg {
+    height: 300px;
+  }
+}
+
