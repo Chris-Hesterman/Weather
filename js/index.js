@@ -97,7 +97,7 @@ $(document).ready(function() {
             .addClass("cloudy");
           $("<img class = 'svg' src = 'https://chris-hesterman.github.io/ch-images//svg icons/animated/cloudy.svg?raw=true'/>").appendTo(".city");
           
-        } else if (weathId.icon == "13d") {
+        } else if (weathId.icon == "13d" || weathId.icon == "13n") {
           $("body")
             .removeClass("sunny")
             .addClass("snow");
